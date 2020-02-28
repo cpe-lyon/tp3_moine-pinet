@@ -36,5 +36,8 @@ En conséquence, le nombre de paquets sont disponibles en téléchargement est 6
 7- Afin de lister l'ensemble des packages installés avec *apt install*, on note la commande *dpkg -S apt install* . Il y en a 580.
 
 
+## Exercice 4
+
+1- Liste des programmes installé avec coreutils : *apt-file list coreutils*
 
 
