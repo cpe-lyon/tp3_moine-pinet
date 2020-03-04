@@ -56,6 +56,22 @@ En conséquence, le nombre de paquets sont disponibles en téléchargement est 6
 
 On procède ainsi :
 
+![lancement aptitude](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/1.PNG)
+![recherche des paquets non installés](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/3.PNG)
+![recherche de "emacs" qui est un éditeur de texte](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/4.PNG)
+![écran de préinstallation NB : pour installer un package, il faut pointer sur ce dernier et appuyer successivement sur "+" ; "g" ; "g" ](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/5.PNG)
+
+NB : pour installer un package, il faut pointer sur ce dernier et appuyer successivement sur "+" ; "g" ; "g".
+
+![écran en cours d'installation du package "emacs"](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/7.PNG)
+
+NB : pour installer un paquet, il est préférable de lancer la commande *sudo bash* avant de lancer **aptitude** dans le but d'être "superutilisateur" (ou encore "root") afin de posséder l'ensemble des droits d'accés aux fichiers nécessaires à l'installation.
+
+Pour vérifier que notre paquet est bien installé, on éxécute la commmande : 
+
+apt list | grep emacs | grep installé
+
+On observe en conséquence qu'un nombre conséquent de paquets relatifs à **emacs** ont été installés.
 
 
 
