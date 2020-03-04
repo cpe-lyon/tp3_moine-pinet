@@ -73,5 +73,18 @@ apt list | grep emacs | grep installé
 
 On observe en conséquence qu'un nombre conséquent de paquets relatifs à **emacs** ont été installés.
 
+## Exercice 6
+
+1- Installation de la version Oracle de Java (avec l’ajout des PPA) : 
+* sudo add-apt-repository ppa:linuxuprising/java 
+* sudo apt update 
+* sudo apt install oracle-java11-installer
+
+2- Le fichier /etc/apt/sources.list.d contient les fichiers :
+* linuxuprising-ubuntu-java-eoan.list
+* linuxuprising-ubuntu-java-eoan.list.save
+
+Le premier, comme le second, contiennent un ensemble de lien vers **ppa.launchpad.net**, services proposés dans le cadre de la plate-forme LaunchPad, qui prend le code source déposé par les développeurs de logiciels et génère des paquets .deb que les utilisateurs d'Ubuntu pourront installer à travers leur gestionnaire de paquets logiciels.
+
 
 
