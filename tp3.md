@@ -42,9 +42,19 @@ En conséquence, le nombre de paquets sont disponibles en téléchargement est 6
 
 *apt-file list coreutils*.
 
-2- La commande *\[* est le symbole conventionnel pour tester une commande dans le bash. Par exemple, si l'on souhaite test la commande *-e* qui permet de vérifier la présence d'un fichier au sein du répertoire courrant, et en conséquence afficher "1" si le fichier recherché y est présent et "0" dans le cas contraire, on réalisera la commande bash suivante : 
+2- L'outil *\[* est le symbole conventionnel pour tester une commande dans le bash. Par exemple, si l'on souhaite test la commande *-e* qui permet de vérifier la présence d'un fichier au sein du répertoire courrant, et en conséquence afficher "1" si le fichier recherché y est présent et "0" dans le cas contraire, on réalisera la commande bash suivante : 
 
 *if \[ -e fichier ]; then echo "1"; else echo "0"; fi*
+
+## Exercice 5
+
+1- On procède dans un premier temps à l'installation de **aptitude** via la commande :
+
+*sudo apt install aptitude*
+
+2- On recherche par la suite le paquet *emacs* à intsaller (pour aller plus vite on peut tapper le mot clé "emacs" précédés d'un "/").
+
+On procède ainsi :
 
 
 
