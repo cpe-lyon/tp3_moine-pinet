@@ -19,8 +19,6 @@ Ainsi on obtient, via l'historique présent dans */var/log/dpkg.log*, la liste d
 
 * *apt*  : *apt list | grep installé | wc -l* => *apt list | grep installé* affiche l'ensemble des paquets installés (en recherchant le mot clé **installé** dans la recherche) ; *wc -l* compte le nombre de ligne engendré par la commande *apt list | grep installé* . Résultat affiché : 506.
 
-Cette différence s'explique ?????????
-
 3- Pour dénombrer l'ensemble des packages disponibles au téléchargement, on procède de la manière suivante  :
 * *apt list | wc -l* => renvoie le nombre de package disponibles et installés sur le serveur. Résultat : 61599
 * *apt list | grep installé | wc -l* => renvoie le nombre de package installés. Résultat : 506
@@ -35,6 +33,24 @@ En conséquence, le nombre de paquets sont disponibles en téléchargement est 6
 
 7- Afin de lister l'ensemble des packages installés avec *apt install*, on note la commande *dpkg -S apt install* . Il y en a 580.
 
+## Exercice 2 
+
+Pour savoir à partir de quel paquet est installé *ls*, on note la commande : 
+
+which -a ls | xargs dpkg -S => coreutils: /bin/bash (*ls* est dans le paquet *coreutils* situé dans le répertoire bin/bash) ; xargs permet de recuperer les résultats de la première commande et de les passer en argument à la deuxième.
+
+script origine-commande:
+
+#!bin/bash 
+
+echo $(which -a $1 | xargs dpkg -S )
+
+
+## Exercice 3
+
+Ecrire une commande qui aﬀiche “INSTALLÉ” ou “NONINSTALLÉ” selon le nom et le statut du package spécifié dans cette commande :
+
+dpkg -l "nomdupackage" | grep "^ii") && echo "installé" || echo "non installé"
 
 ## Exercice 4
 
@@ -86,8 +102,12 @@ On observe en conséquence qu'un nombre conséquent de paquets relatifs à **ema
 
 Le premier, comme le second, contiennent un ensemble de lien vers **ppa.launchpad.net**, services proposés dans le cadre de la plate-forme LaunchPad, qui prend le code source déposé par les développeurs de logiciels et génère des paquets .deb que les utilisateurs d'Ubuntu pourront installer à travers leur gestionnaire de paquets logiciels.
 
+## Annexes sujet Exerice 7 et 8
 
-## Exercice 7
+### Exercice 7
 
-## Exercice 8
+![écran en cours d'installation du package "emacs"](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/7.PNG)
 
+### Exercice 8
+
+![écran en cours d'installation du package "emacs"](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/7.PNG)
