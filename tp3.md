@@ -106,8 +106,10 @@ Le premier, comme le second, contiennent un ensemble de lien vers **ppa.launchpa
 
 ### Exercice 7
 
-![écran en cours d'installation du package "emacs"](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/7.PNG)
+![sujet tp](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/10.PNG)
+![sujet tp](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/11.PNG)
+![sujet tp](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/12.PNG)
 
 ### Exercice 8
 
-![écran en cours d'installation du package "emacs"](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/7.PNG)
+![sujet tp](https://github.com/cpe-lyon/tp3_moine-pinet/blob/master/13.PNG)
